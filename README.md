@@ -57,17 +57,22 @@ Navigate to the deployment(https://try.dominodatalab.com or whatever deployment 
 
 ### 6. Launch a terminal and download dependencies
  - After the workspace has launched, launch a terminal by double-clicking on the terminal icon. Run the following commands
+
  - Download a mini (subset of VoxCeleb1) dataset. Refer to the link for more information on dataset (https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html)
+ 
         wget https://dsp-workflow.s3-us-west-2.amazonaws.com/VoxCeleb1_mini.tar.gz
 
    Download pyAudioAnalysis (This dependency/library is used to detect silence segments in speech .wav files)
+
         wget https://dsp-workflow.s3-us-west-2.amazonaws.com/pyAudioAnalysis.tar.gz
 
  - Untar the files
+ 
         tar -xvzf pyAudioAnalysis.tar.gz
         tar -xvzf VoxCeleb1_mini.tar.gz
         
  - Activate environment
+ 
         source activate bob_kaldi36
 
  - Navigate to the pyAudioAnalysis directory and install some more dependencies
@@ -77,23 +82,31 @@ Navigate to the deployment(https://try.dominodatalab.com or whatever deployment 
 
 ### 7. Extract MFCCs (Mel Frequency Cepstral Coefficients)
 ###### from dev dataset
+
         python extract_spkr_utterancewise_MFCCs.py --dataset dev
+
 ###### from test dataset
+
         python extract_spkr_utterancewise_MFCCs.py --dataset test      
        
 ### 8. Train the UBM 
 ##### (Universal Background Model) from the extracted MFCCs (dev dataset)
+
         python UBM_training.py
         
 ### 9. Train the iVector (extractor)
+
         python iVector_training.py
         
 ### 10. Extract iVectors
 ###### from dev dataset
-###### from test dataset
+
         python extract_spkr_utterancewise_iVectors.py --dataset dev
+
+###### from test dataset
+
         python extract_spkr_utterancewise_iVectors.py --dataset test
 
 ### 11. Evaluate model performance
 #### False Positive Rate and False Negative Rate 
-python tpr_fpr.py
+        python tpr_fpr.py
