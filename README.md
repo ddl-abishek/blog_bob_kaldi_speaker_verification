@@ -8,8 +8,10 @@ If the environment is not present, then follow the steps below to create the env
  - Click on Environments in the left most panel followed by **+Create Environment**
  - Under name type **bob_kaldi_lite**
  - Under description type light version of bob_kaldi (the description can be left blank)
- - Under Base Image, select the Custom Image radio button and copy and paste this URI 
+ - Under Base Image, select the Custom Image radio button and copy and paste this URI
+
         dominodatalab/base:DMD_py3.6_r3.6_2019q4
+
    (This is the URI of the Domino Minimal Distribution which is lightweight and helps in 
    faster launch times of workspaces)
  - Under Visibility, select the **Globally Accessible** radio button
