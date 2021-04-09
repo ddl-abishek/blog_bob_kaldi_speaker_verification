@@ -121,3 +121,5 @@ If the environment is not present, then follow the steps below to create the env
 https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html
 
 https://www.idiap.ch/software/bob/docs/bob/bob.kaldi/master/py_api.html#module-bob.kaldi
+
+https://www.researchgate.net/publication/268277174_Speaker_Verification_using_I-vector_Features
