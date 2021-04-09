@@ -116,3 +116,8 @@ If the environment is not present, then follow the steps below to create the env
 ### 11. Evaluate model performance
 #### False Positive Rate and False Negative Rate 
         python tpr_fpr.py
+        
+# References
+https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html
+
+https://www.idiap.ch/software/bob/docs/bob/bob.kaldi/master/py_api.html#module-bob.kaldi
