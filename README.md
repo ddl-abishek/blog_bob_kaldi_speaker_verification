@@ -15,6 +15,7 @@ If the environment is not present, then follow the steps below to create the env
  - Under Visibility, select the **Globally Accessible** radio button
  - Click on the **+Create Envioronment** button in the bottom of ther dialog. You will be directed to the Overview panel of the environment
  - Click on Edit Dockerfile under Dockerfile Instructions. Type the following:-
+
         RUN \
           wget https://dsp-workflow.s3-us-west-2.amazonaws.com/bob_kaldi_environment.yml && \
           conda env create -f bob_kaldi_environment.yml
@@ -22,6 +23,7 @@ If the environment is not present, then follow the steps below to create the env
     (The above command downloads the conda environment yaml file and creates an environment called bob_kaldi36 in the domino deployment https://try.dominodatalab.com or whatever deployment you may be running this project on)
     
  - Under Pluggable Workspace Tools, type copy and paste the following
+ 
         jupyterlab:
           title: "JupyterLab"
           iconUrl: "/assets/images/workspace-logos/jupyterlab.svg"
@@ -39,7 +41,9 @@ If the environment is not present, then follow the steps below to create the env
         git clone https://github.com/ddl-abishek/blog_bob_kaldi_speaker_verification.git
 
 ### 3. Let's create a project in the deployment. 
-Navigate to the deployment(https://try.dominodatalab.com or whatever deployment you may be using) and click on Projects in the left most tab. Click on the **New Project** button in the top-right corner. Under Project Name, type **blog_bob_kaldi_speaker_verification**. Under Project Visibility, choose the **Private** radio button. Under Code Repository, choose the **DFS** radio button. Click on **Create Project**. 
+ - Navigate to the deployment(https://try.dominodatalab.com or whatever deployment you may be using) and click on Projects in the left most tab.
+
+ - Click on the **New Project** button in the top-right corner. Under Project Name, type **blog_bob_kaldi_speaker_verification**. Under Project Visibility, choose the **Private** radio button. Under Code Repository, choose the **DFS** radio button. Click on **Create Project**. 
 
 ### 4. Upload the project files
  - You should be directed to the Overview section of the project. 
