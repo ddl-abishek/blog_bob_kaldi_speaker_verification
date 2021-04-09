@@ -71,6 +71,7 @@ Navigate to the deployment(https://try.dominodatalab.com or whatever deployment 
         source activate bob_kaldi36
 
  - Navigate to the pyAudioAnalysis directory and install some more dependencies
+ 
         cd pyAudioAnalysis
         pip install -e .
 
