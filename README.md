@@ -117,6 +117,11 @@ If the environment is not present, then follow the steps below to create the env
 #### False Positive Rate and False Negative Rate 
         python tpr_fpr.py
         
+### 12. Download pre-trained model files trained larger set of speakers in VoxCeleb1 (iVector_v4.model,full_GMM-UBM_v4.model,diag_GMM-UBM_v4.model)
+       wget https://dsp-workflow.s3-us-west-2.amazonaws.com/blog_bob_kaldi_speaker_verification/iVector_v4.model
+       wget https://dsp-workflow.s3-us-west-2.amazonaws.com/blog_bob_kaldi_speaker_verification/full_GMM-UBM_v4.model
+       wget https://dsp-workflow.s3-us-west-2.amazonaws.com/blog_bob_kaldi_speaker_verification/diag_GMM-UBM_v4.model
+        
 # References
 https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html
 
