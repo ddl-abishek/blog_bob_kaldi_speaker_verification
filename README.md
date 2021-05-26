@@ -41,8 +41,11 @@ If the environment is not present, then follow the steps below to create the env
 
 ### 2. Clone this git repo to your local system. In your terminal, type 
         git clone https://github.com/ddl-abishek/blog_bob_kaldi_speaker_verification.git
-###### If this does not work in try.dominodatalab.com, please try the nelow command
-        wget wget https://dsp-workflow.s3-us-west-2.amazonaws.com/blog_bob_kaldi_speaker_verification/blog_bob_kaldi_speaker_verification-master.zip
+        
+###### If this does not work in try.dominodatalab.com, please try the below command.
+        wget https://dsp-workflow.s3-us-west-2.amazonaws.com/blog_bob_kaldi_speaker_verification/blog_bob_kaldi_speaker_verification-master.zip
+###### Now unzip the file
+        unzip ./blog_bob_kaldi_speaker_verification-master.zip
 
         
 
