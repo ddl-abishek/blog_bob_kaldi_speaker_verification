@@ -121,6 +121,11 @@ If the environment is not present, then follow the steps below to create the env
        wget https://dsp-workflow.s3-us-west-2.amazonaws.com/blog_bob_kaldi_speaker_verification/iVector_v4.model
        wget https://dsp-workflow.s3-us-west-2.amazonaws.com/blog_bob_kaldi_speaker_verification/full_GMM-UBM_v4.model
        wget https://dsp-workflow.s3-us-west-2.amazonaws.com/blog_bob_kaldi_speaker_verification/diag_GMM-UBM_v4.model
+       
+###### To measure the performance of the pre-trained model, simply update the config yaml file path of model_files, namely
+######  diag_GMM-UBM : './model_files/diag_GMM-UBM_v4.model'
+######  full_GMM-UBM : './model_files/full_GMM-UBM_v4.model'
+######  iVector : './model_files/iVector_v4.model'
         
 # References
 https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html
