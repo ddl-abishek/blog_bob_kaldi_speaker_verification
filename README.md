@@ -82,6 +82,7 @@ If the environment is not present, then follow the steps below to create the env
  - Untar the files
  
         tar -xvzf pyAudioAnalysis.tar.gz
+
         tar -xvzf VoxCeleb1_mini.tar.gz
         
  - Activate environment
