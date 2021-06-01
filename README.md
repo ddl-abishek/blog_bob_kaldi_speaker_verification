@@ -97,6 +97,7 @@ If the environment is not present, then follow the steps below to create the env
 ### 7. Extract MFCCs (Mel Frequency Cepstral Coefficients)
 ###### from dev dataset
 
+        cd ../
         python extract_spkr_utterancewise_MFCCs.py --dataset dev
 
 ###### from test dataset
