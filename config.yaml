@@ -9,9 +9,9 @@ dirs:
     iVector_path_test : './spkr_utterancewise_test_iVectors_mini/'
 
 model_files:
-    diag_GMM-UBM : './model_files/diag_GMM-UBM_mini.model'
-    full_GMM-UBM : './model_files/full_GMM-UBM_mini.model'
-    iVector : './model_files/iVector_mini.model'
+    diag_GMM-UBM : './model_files/diag_GMM-UBM_v4.model'
+    full_GMM-UBM :  './model_files/full_GMM-UBM_v4.model'
+    iVector : './model_files/iVector_v4.model'
     plda_mean : './model_files/plda_global_mean_mini.model'
     trained_plda : './model_files/trained_plda_mini.model'
 

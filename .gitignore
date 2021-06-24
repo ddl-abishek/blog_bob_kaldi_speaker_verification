@@ -3,4 +3,5 @@ pyAudioAnalysis
 VoxCeleb1_mini
 VoxCeleb1_mini.tar.gz
 model_files
-.ipynb_checkpoints/
+.ipynb_checkpoints
+__pycache__
