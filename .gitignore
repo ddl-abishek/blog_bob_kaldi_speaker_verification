@@ -5,3 +5,4 @@ VoxCeleb1_mini.tar.gz
 model_files
 .ipynb_checkpoints
 __pycache__
+enrolled_speakers

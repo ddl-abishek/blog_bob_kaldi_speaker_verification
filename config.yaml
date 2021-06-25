@@ -54,3 +54,6 @@ iVector_extract_params:
     num_gselect : 20 
     min_post : 0.025
     posterior_scale : 1.0
+
+enrolled_speakers:
+    path : './enrolled_speakers'
