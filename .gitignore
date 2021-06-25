@@ -6,3 +6,6 @@ model_files
 .ipynb_checkpoints
 __pycache__
 enrolled_speakers
+model.ipynb
+base64_VoxCeleb1_mini
+enrolled_speakers

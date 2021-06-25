@@ -15,7 +15,6 @@ def silence_detection(data):
                                          0.09-1.12   
     Utlises a pretained Hidden Markov Model in pyAudioanalysis that determines speech 
     activity.
-
     Parameters: 
     data (reader): reader returned by bob.io.audio.reader  
   
