@@ -132,10 +132,10 @@ def verifySpeaker(payload):
         return {'status' : 'fail', 'msg' : 'enter valid task "enroll" or "verify"'}
     
 
-if __name__ == "__main__":    
-    base64string = open('./base64_VoxCeleb1_mini/id10001_1zcIwhmdeo4_00001.txt','r').read()
-    payload =  { 'task' : 'enroll',
-                 'aud_b64' : base64string,
-                 'spkr_id' : 'r12079'}
+# if __name__ == "__main__":    
+#     base64string = open('./base64_VoxCeleb1_mini/id10001_1zcIwhmdeo4_00001.txt','r').read()
+#     payload =  { 'task' : 'enroll',
+#                  'aud_b64' : base64string,
+#                  'spkr_id' : 'r12079'}
 
-    print(verifySpeaker(payload))
+#     print(verifySpeaker(payload))
