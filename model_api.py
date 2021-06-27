@@ -98,7 +98,6 @@ def decode_base64(base64string):
 def verifySpeaker(payload):
     [task,aud_b64,spkr_id] = payload.values()
     [status,msg,wav_temp,data] = decode_base64(base64string).values()
-    os.unlink("./" + str(wav_temp.name) )
     
     if status == 'fail':
         return {'status': status,'msg' : msg}
@@ -106,6 +105,7 @@ def verifySpeaker(payload):
     if task == 'enroll':
         model = iVector_model(data)
         enroll_status = model.enroll(spkr_id)
+        os.unlink("./" + str(wav_temp.name))
         
         if enroll_status:
             return {'status' : 'pass','msg' : f'speaker {spkr_id} enrolled'}
@@ -115,6 +115,7 @@ def verifySpeaker(payload):
     elif task == 'verify':
         model = iVector_model(data)
         verify_status = model.verify(spkr_id)
+        os.unlink("./" + str(wav_temp.name) )
         
         if not(verify_status):
             return {'status' : 'fail' , 'msg' : f'speaker {spkr_id} does not exist'}
@@ -122,6 +123,7 @@ def verifySpeaker(payload):
             return {'status' : 'pass' , 'msg' : f'cosine similarity score {verify_status}'}
     
     else:
+        os.unlink("./" + str(wav_temp.name) )
         return {'status' : 'fail', 'msg' : 'enter valid task "enroll" or "verify"'}
     
 
