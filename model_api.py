@@ -1,4 +1,3 @@
-from flask import Flask, request, jsonify
 import base64
 import tempfile
 import os
@@ -44,6 +43,9 @@ class iVector_model:
         return iVector
 
     def enroll(self,spkr_id):
+        if not(os.path.isdir(config['enrolled_speakers']['path'])):
+            os.makedirs(config['enrolled_speakers']['path'])
+            
         if not(spkr_id in os.listdir(config['enrolled_speakers']['path'])):
             iVector = self.get_iVector()
             
@@ -58,6 +60,9 @@ class iVector_model:
             return False
 
     def verify(self,spkr_id):
+        if not(os.path.isdir(config['enrolled_speakers']['path'])):
+            os.makedirs(config['enrolled_speakers']['path'])
+            
         if spkr_id in os.listdir(config['enrolled_speakers']['path']):
             spkr_path = os.path.join(config['enrolled_speakers']['path'],spkr_id) 
             spkr_iVec_path = os.path.join(spkr_path,os.listdir(spkr_path)[0])
@@ -127,10 +132,10 @@ def verifySpeaker(payload):
         return {'status' : 'fail', 'msg' : 'enter valid task "enroll" or "verify"'}
     
 
-# if __name__ == "__main__":    
-#     base64string = open('./base64_VoxCeleb1_mini/id10001_1zcIwhmdeo4_00001.txt','r').read()
-#     payload =  { 'task' : 'verify',
-#                  'aud_b64' : base64string,
-#                  'spkr_id' : 'r12079'}
+if __name__ == "__main__":    
+    base64string = open('./base64_VoxCeleb1_mini/id10001_1zcIwhmdeo4_00001.txt','r').read()
+    payload =  { 'task' : 'enroll',
+                 'aud_b64' : base64string,
+                 'spkr_id' : 'r12079'}
 
-#     print(verifySpeaker(payload))
+    print(verifySpeaker(payload))
