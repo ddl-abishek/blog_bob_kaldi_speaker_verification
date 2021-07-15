@@ -56,7 +56,7 @@ If the environment is not present, then follow the steps below to create the env
 
 ### 4. Upload the project files
  - You should be directed to the Overview section of the project. 
- - Click on browse for files. Navigate to the directory where the repo was cloned and select all the repo files.
+ - Click on browse for files. Navigate to the directory where the repo was cloned and select all the repo files or the zip file(whichever one you chose).
  - Now click on the **Upload** button.
 
 ### 5. Launch a workspace to run the project
@@ -128,7 +128,7 @@ If the environment is not present, then follow the steps below to create the env
 #### False Positive Rate and False Negative Rate 
         python tpr_fpr.py
         
-### 12. Download pre-trained model files trained larger set of speakers in VoxCeleb1 (iVector_v4.model,full_GMM-UBM_v4.model,diag_GMM-UBM_v4.model)
+### 12. Download pre-trained model files trained larger set of speakers in VoxCeleb1 (iVector_v4.model,full_GMM-UBM_v4.model,diag_GMM-UBM_v4.model) to your computer and upload the files the same way described above.
        wget https://dsp-workflow.s3-us-west-2.amazonaws.com/blog_bob_kaldi_speaker_verification/iVector_v4.model
        wget https://dsp-workflow.s3-us-west-2.amazonaws.com/blog_bob_kaldi_speaker_verification/full_GMM-UBM_v4.model
        wget https://dsp-workflow.s3-us-west-2.amazonaws.com/blog_bob_kaldi_speaker_verification/diag_GMM-UBM_v4.model
