@@ -68,18 +68,20 @@ If the environment is not present, then follow the steps below to create the env
  - Click on Launch Now and wait for the workspace to launch.
 
 
-### 6. Launch a terminal and download dependencies
- - After the workspace has launched, launch a terminal by double-clicking on the terminal icon. Run the following commands
-
- - Download a mini (subset of VoxCeleb1) dataset. Refer to the link for more information on dataset (https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html)
+### 6. Download dependencies and upload to project
+ - In you laptop/computer, run these commands in the terminal and downlaod the dependencies.
+ 
+ - Download a mini (subset of VoxCeleb1) dataset. Refer to the link for more information on the dataset (https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html)
  
         wget https://dsp-workflow.s3-us-west-2.amazonaws.com/VoxCeleb1_mini.tar.gz
 
    Download pyAudioAnalysis (This dependency/library is used to detect silence segments in speech .wav files)
 
         wget https://dsp-workflow.s3-us-west-2.amazonaws.com/pyAudioAnalysis.tar.gz
+        
+ - Now upload these dependencies to the domino workspace by going to the domino worksapce and clicking on the upload button (upward arrow on top of a horizontal line). Navigate to the directory where these dependeencies were saved and upload them. Start a terminal in the domino workspace by clicking on File -> New -> Terminal.
 
- - Untar the files
+ - Untar the files in the terminal present in the domino workspace by running the commands
  
         tar -xvzf pyAudioAnalysis.tar.gz
 
