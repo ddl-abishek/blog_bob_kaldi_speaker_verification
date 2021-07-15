@@ -52,7 +52,7 @@ If the environment is not present, then follow the steps below to create the env
 ### 3. Let's create a project in the deployment. 
  - Navigate to the deployment(https://try.dominodatalab.com or whatever deployment you may be using) and click on Projects in the left most tab.
 
- - Click on the **New Project** button in the top-right corner. Under Project Name, type **blog_bob_kaldi_speaker_verification**. Under Project Visibility, choose the **Private** radio button. Under Code Repository, choose the **DFS** radio button. Click on **Create Project**. 
+ - Click on the **New Project** button in the top-right corner. Under Project Name, type **blog_bob_kaldi_speaker_verification**. Under Project Visibility, choose the **Private** radio button. Under Code Repository, choose the **Domino File Syste**. Click on **Create Project**. 
 
 ### 4. Upload the project files
  - You should be directed to the Overview section of the project. 
